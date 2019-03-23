@@ -8,10 +8,12 @@ Extend the Elma car to use a more realistic simulation of a car's velocity inclu
 Design
 ===
 
-![alt text][design]
+![Design][design]
 
-[design]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Elma Car design"
+[design]: https://github.com/dantranr/elma/blob/master/images/design.png "Elma Car design"
 
+Design can be found [here](https://github.com/dantranr/elma/blob/master/images/design.png) 
+images/design.png
 
 Info
 ===

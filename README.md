@@ -154,8 +154,10 @@ Output result
 
 ![Test][test1]
 
-[test1]: https://github.com/dantranr/elma/blob/master/images/test_output1.png "Elma Car test result"
+[test1]: https://github.com/dantranr/elma/blob/master/images/test_output1.PNG "Elma Car test result"
 
+Test result also can be found [here](https://github.com/dantranr/elma/blob/master/images/test_output1.PNG) 
+images/test_output1.png
 
 Enhancement 
 ---

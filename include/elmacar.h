@@ -6,32 +6,32 @@
 
 class ElmaCar {
 public:
-	Engine *MyEngine;
-	Radio *MyRadio;
-	Wheels *MyWheels;
-	Brakes *MyBrakes;
-	Headlights *MyHeadlights;
-	AirConditioner *MyAirConditioner;
+	Engine *elmaEngine;
+	Radio *elmaRadio;
+	Wheels *elmaWheels;
+	Brakes *elmaBrakes;
+	Headlights *elmaHeadlights;
+	AirConditioner *elmaAirConditioner;
 	ElmaCar();
 };
 
 class ElmaCarControls : public ElmaCar {
 public:
+	ElmaCarControls() : ElmaCar() {};
+    void TurnOnAC();
+	void TurnOffAC();
+	void AdjustAC(int amount);
+	void TurnOnHeadlights();
+	void TurnOffHeadlights();
+	void TurnOnRadio();
+	void TurnOffRadio();
+	void AdjustRadioVolume(int amount);
+	void PressBrake(int amount);
 	void StartCar();
 	void StopCar();
 	void PushGasPedal(int amount);
 	void ReleaseGasPedal(int amount);
-	void PressBrake(int amount);
-	void TurnOnRadio();
-	void TurnOffRadio();
-	void AdjustRadioVolume(int amount);
-	void TurnOnHeadlights();
-	void TurnOffHeadlights();
-	void TurnOnAC();
-	void TurnOffAC();
-	void AdjustAC(int amount);
 	int GetSpeed();
-	ElmaCarControls() : ElmaCar() {};
 };
 
 #endif

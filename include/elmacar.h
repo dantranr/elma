@@ -3,7 +3,7 @@
 
 #include "elma/elma.h" // Note installation directory for elma
 #include "helper.h"
-
+ 
 //!  A ElmaCar class. 
 /*!
   This class start to initialize all the car methods
@@ -26,7 +26,7 @@ public:
 class ElmaCarControls : public ElmaCar {
 public:
 	ElmaCarControls() : ElmaCar() {};
-    void TurnOnAC();
+  void TurnOnAC();
 	void TurnOffAC();
 	void AdjustAC(int amount);
 	void TurnOnHeadlights();

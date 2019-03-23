@@ -19,7 +19,7 @@ int main() {
      .schedule(stopwatch, 10_ms)     
      .init()
      .run();
-
+   
     endwin();     
      
 }

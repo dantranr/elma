@@ -9,7 +9,7 @@ void AirConditioner::TurnOff() {
 	ChangedBy = 0 - Level;
 	Level = 0;
 }
-
+ 
 //! Set level for the Air Conditioner
 //! \return void set the level air conditioner
 void AirConditioner::SetLevel(int newlevel) {

@@ -79,7 +79,7 @@ void ElmaCarControls::PressBrake(int amount) {
 void ElmaCarControls::StartCar() {
 	elmaEngine->Start();
 }
-
+ 
 //! Stop ElmaCar
 //! \return the engine is stopped
 void ElmaCarControls::StopCar() {

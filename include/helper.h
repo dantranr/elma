@@ -1,4 +1,4 @@
- #ifndef _HELPER_H
+#ifndef _HELPER_H
 #define _HELPER_H
 
 #include "elmacar.h"
@@ -32,6 +32,7 @@ public:
 //!    ElmaCar->ElmaCarEngine->PushGasPedal(10);
 //!    ElmaCar->ElmaCarEngine->ReleaseGasPedal(5);
 //! @endcode
+
 class Engine : public Helper {
 protected:
     friend class ElmaCar;
@@ -108,7 +109,7 @@ public:
     void Adjust (int amount);
     int GetBrightness() { return Brightness;}
 };
-
+ 
 //! Radio set and adjust the volume
 //! @code
 //!    ElmaCar *ElmaCar = new Elmacar();

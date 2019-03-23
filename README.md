@@ -1,15 +1,45 @@
-Example Elma Project
+Elma Final Project
 ===
 
-[Elma](http://klavinslab.org/elma) is an event loop manager designed to teach embedded and reactive systems programming. This repository contains an example Elma project, showing how to use many Elma features, as well as illustrating how to arrange the files and directories in an Elma project.
+Goal
+===
+Extend the Elma car to use a more realistic simulation of a car's velocity including Radio, brakes, engine, headlighs, air conditioning, and a driver that can change gears, speed up, slow down, and stop. 
 
-The source code for this project is available [on github](https://github.com/klavinslab/elma_project).
+Design
+===
+
+![alt text][design]
+
+[design]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Elma Car design"
+
+
+Info
+===
+This project is based on the [Elma](http://klavinslab.org/elma), an event loop manager for embedded and reactive systems. It keeps track of processes, finite state machines, events, and communication channels, executing them at specified frequencies. 
+More information on how Elma was designed can be found in the links below:
+- [Event loop management](https://github.com/klavins/ECEP520/tree/master/week_6)
+- [Events and finite state machines](https://github.com/klavins/ECEP520/tree/master/week_7)
+- [HTTP in event loops](https://github.com/klavins/ECEP520/blob/master/week_8)
+
+
+Milestones
+===
+
+|Milestone                                          | Target Date   | Status    | Completion Date|
+|:---                                               | :---:         | :---:     |   :---:        |
+|1. Making new repo start as a fork of Elma_Project |03.15.19       |Completed  | 03.21.19       |
+|2. Update code library for Car                     |03.18.19       |In Progress|   TBD          |
+|3. Build an example or two to show it works        |03.18.19       |In Progress|   TBD          |
+|4. Test Car working                                |03.22.19       | :---:     |   :---:        |
+|5. Complete the API documentation                  |03.22.19       | :---:     |   :---:        |
+|6. Complete final project                          |03.22.19       | :---:     |   :---:        |
+
 
 Installation
 ---
 
-    git clone https://github.com/klavinslab/elma_project.git
-    cd elma_project
+    git clone https://github.com/dantranr/elma.git
+    cd elma
     docker run -v $PWD:/source -it klavins/elma:latest bash
     make
     make docs
@@ -17,15 +47,15 @@ Installation
 
 Execution
 ---
-To run the stopwatch, type
+To run the project, type
 
-    bin/stopwatch
+    bin/elmacar
 
 The stopwatch is controlled via the keyboard, via these keys:
 - **s**: Start or stop
-- **l**: Lap
-- **r**: Reset
-- **q**: Quit
+- **g**: Gear up
+- **d**: Gear down
+- **b**: Back up
 
 Testing
 ---
@@ -48,4 +78,12 @@ Mention anyone who helped you and how.
 
 References
 ---
-List all libraries, articles, stack overflow answers, etc. that you used to get your code working.
+
+[Dependency Injection in C++](https://vladris.com/blog/2016/07/06/dependency-injection-in-c.html)
+
+[cplusplus beginner](http://www.cplusplus.com/forum/beginner/216417/)
+
+[C++ All-In-One Desk Reference For Dummies](https://www.amazon.com/All-One-Desk-Reference-Dummies/dp/0470317353)
+
+
+

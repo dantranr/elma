@@ -104,11 +104,9 @@ Radio
 The radio can be adjusted with the volume on and off depending on the amount volume that we design it to.  
 
 ```c++
-    void AdjustVolume(int amount) { Volume += amount; }
-    void SetVolume(int amount) { Volume = amount; }
-    int GetVolume() { return Volume;}
-};
-
+    void AdjustVolume(int amount);
+    void SetVolume(int amount);
+    int GetVolume();
 ```
 
 

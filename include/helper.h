@@ -3,6 +3,12 @@
 
 #include "elmacar.h"
 
+//! AirConditioner that can turn on, turn off, get AC level, and set AC level
+//! @code
+//!    ElmaCar *ElmaCar = new Elmacar();
+//!    ElmaCar->ElmaCarControls->TurnOnAC()
+//!    ElmaCar->ElmaCarControls->GetLevel()
+//! @endcode
 class AirConditioner : public Helper {
 protected:
     friend class ElmaCar;
@@ -18,6 +24,14 @@ public:
     void SetLevel(int level);
 };
 
+//! Engine that can start, stop, adjust the pedal speed
+//! @code
+//!    ElmaCar *ElmaCar = new Elmacar();
+//!    ElmaCar->ElmaCarEngine->Start();
+//!    ElmaCar->ElmaCarEngine->Stop();
+//!    ElmaCar->ElmaCarEngine->PushGasPedal(10);
+//!    ElmaCar->ElmaCarEngine->ReleaseGasPedal(5);
+//! @endcode
 class Engine : public Helper {
 protected:
     friend class ElmaCar;
@@ -34,7 +48,12 @@ public:
     void Stop();
 };
 
-
+//! Brakes that can apply the value to the car's speed
+//! @code
+//!    ElmaCar *ElmaCar = new Elmacar();
+//!    ElmaCar->ElmaCarEngine->Start();
+//!    ElmaCar->ElmaCarBrakes->Apply(10);
+//! @endcode
 class Brakes : public Helper {
 protected:
     friend class ElmaCar;
@@ -46,6 +65,14 @@ public:
     void Apply(int amount);
 };
 
+//! Wheels that can accelebrate, decelebrate, and get speed
+//! @code
+//!    ElmaCar *ElmaCar = new Elmacar();
+//!    ElmaCar->ElmaCarEngine->Start();
+//!    ElmaCar->ElmaCarWheels->Accelebrate(20);
+//!    ElmaCar->ElmaCarWheels->Decelebrate(20);
+//!    ElmaCar ->ElmaCarWheels->GetSpeed() 
+//! @endcode
 class Wheels : public Helper {
 protected:
     friend class ElmaCar;
@@ -59,6 +86,15 @@ public:
     void Decelebrate(int amount);
 };
 
+//! Headlights turn on, off, and adjust the brightness
+//! @code
+//!    ElmaCar *ElmaCar = new Elmacar();
+//!    ElmaCar->ElmaCarEngine->Start();
+//!    ElmaCar->ElmaCarHeadlights->TurnOn();
+//!    ElmaCar->ElmaCarHeadlights->TurnOff();
+//!    ElmaCar->ElmaCarHeadlights->Adjust(10);
+//!    ElmaCar->ElmaCarHeadlights->GetBrightness();
+//! @endcode
 class Headlights : public Helper {
 protected:
     friend class ElmaCar; 
@@ -73,6 +109,14 @@ public:
     int GetBrightness() { return Brightness;}
 };
 
+//! Radio set and adjust the volume
+//! @code
+//!    ElmaCar *ElmaCar = new Elmacar();
+//!    ElmaCar->ElmaCarEngine->Start();
+//!    ElmaCar->ElmaCarControls->SetVolume(100);
+//!    ElmaCar->ElmaCarControls->AdjustVolume(-50);
+//!    ElmaCar->ElmaCarControls->GetVolume();
+//! @endcode
 class Radio : public Helper {
 protected:
     friend class ElmaCar;

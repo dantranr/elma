@@ -4,69 +4,106 @@
 
 using namespace std;
 
+//!  A ElmaCar class. 
+/*!
+  This class start to initialize all the car methods
+*/
+
 ElmaCar::ElmaCar() {
-	MyAirConditioner = new AirConditioner(this);
-	MyHeadlights = new Headlights(this);
-	MyRadio = new Radio(this);
-	MyBrakes = new Brakes(this);
-	MyEngine  = new Engine(this);
-	MyWheels = new Wheels(this);
+	elmaAirConditioner = new AirConditioner(this);
+	elmaHeadlights = new Headlights(this);
+	elmaRadio = new Radio(this);
+	elmaBrakes = new Brakes(this);
+	elmaEngine  = new Engine(this);
+	elmaWheels = new Wheels(this);
 }
 
+//! Turn on AC for Elmacar
+//! \return void AC on
 void ElmaCarControls::TurnOnAC() {
-	MyAirConditioner->TurnOn();
+	elmaAirConditioner->TurnOn();
 }
 
+//! Turn off AC for Elmacar
+//! \return void AC off
 void ElmaCarControls::TurnOffAC() {
-	MyAirConditioner->TurnOff();
+	elmaAirConditioner->TurnOff();
 }
 
+//! Adjust AC for Elmacar
+//! \param amount the value of AC
+//! \return void setlevel value
 void ElmaCarControls::AdjustAC(int amount) {
-	MyAirConditioner->SetLevel(amount);
+	elmaAirConditioner->SetLevel(amount);
 }
 
+//! Turn on light for Elmacar
+//! \return void lights is on
 void ElmaCarControls::TurnOnHeadlights() {
-	MyHeadlights->TurnOn();
+	elmaHeadlights->TurnOn();
 }
 
+//! Turn off light for Elmacar
+//! \return void lights is off
 void ElmaCarControls::TurnOffHeadlights() {
-	MyHeadlights->TurnOff();
+	elmaHeadlights->TurnOff();
 }
 
+//! Turn on radio for Elmacar
+//! \return void radio is on with set volume to 100
 void ElmaCarControls::TurnOnRadio() {
-	MyRadio->SetVolume(100);
+	elmaRadio->SetVolume(100);
 }
 
+//! Turn off radio for Elmacar
+//! \return void radio is off volume to 0
 void ElmaCarControls::TurnOffRadio() {
-	MyRadio->SetVolume(0);
+	elmaRadio->SetVolume(0);
 }
 
+//! Adjust radio volume for Elmacar
+//! \return the volume value
 void ElmaCarControls::AdjustRadioVolume(int amount) {
-	MyRadio->AdjustVolume(amount);
+	elmaRadio->AdjustVolume(amount);
 }
 
+//! Press brake function
+//! \param amount the value to set to brake
+//! \return void apply the brake value to the elmacar
 void ElmaCarControls::PressBrake(int amount) {
-	MyBrakes->Apply(amount);
+	elmaBrakes->Apply(amount);
 }
 
+//! Start ElmaCar
+//! \return the engine is started
 void ElmaCarControls::StartCar() {
-	MyEngine->Start();
+	elmaEngine->Start();
 }
 
+//! Stop ElmaCar
+//! \return the engine is stopped
 void ElmaCarControls::StopCar() {
-	MyEngine->Stop();
+	elmaEngine->Stop();
 }
 
+//! Release gas pedal function
+//! \param amount the value to release the pedal
+//! \return void apply to the elma car the amount of release the gas pedal
 void ElmaCarControls::ReleaseGasPedal(int amount) {
-	MyEngine->ReleaseGasPedal(amount);
+	elmaEngine->ReleaseGasPedal(amount);
 }
 
+//! Push gas pedal function
+//! \param amount the value to push the pedal
+//! \return void apply to the elma car the amount of push the gas pedal
 void ElmaCarControls::PushGasPedal(int amount) {
-	MyEngine->PushGasPedal(amount);
+	elmaEngine->PushGasPedal(amount);
 }
 
+//! Get speed function
+//! \return integer the speed value of ElmaCar
 int ElmaCarControls::GetSpeed() {
-	return MyWheels->Speed;
+	return elmaWheels->Speed;
 }
 
 

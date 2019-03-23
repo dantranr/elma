@@ -4,6 +4,10 @@
 #include "elma/elma.h" // Note installation directory for elma
 #include "helper.h"
 
+//!  A ElmaCar class. 
+/*!
+  This class start to initialize all the car methods
+*/
 class ElmaCar {
 public:
 	Engine *elmaEngine;
@@ -15,6 +19,10 @@ public:
 	ElmaCar();
 };
 
+//!  A ElmaCarControls class. 
+/*!
+  This class included all the methods/functions of the car
+*/
 class ElmaCarControls : public ElmaCar {
 public:
 	ElmaCarControls() : ElmaCar() {};

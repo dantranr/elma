@@ -1,9 +1,9 @@
-Elma Final Project
+Elma Car Final Project
 ===
 
 Goal
 ===
-Extend the Elma car to use a more realistic simulation of a car's velocity including Radio, brakes, engine, headlights, air conditioning, and a driver that can change gears, speed up, slow down, and stop. 
+Extend the Elma car to use a more realistic simulation of a car's velocity including radio, brakes, engine, headlights, air conditioning, and a driver that can change gears, speed up, slow down, and stop. 
 
 Info
 ===
@@ -22,9 +22,9 @@ Milestones
 |1. Making new repo start as a fork of Elma_Project |03.15.19       |Completed  |   03.21.19     |
 |2. Update code library for Car                     |03.18.19       |Completed  |   03.22.19     |
 |3. Build an example or two to show it works        |03.18.19       |Completed  |   03.22.19     |
-|4. Test Car working                                |03.22.19       |IP  |   03.22.19     |
-|5. Complete the API documentation                  |03.22.19       |IP  |   03.23.19     |
-|6. Complete final project                          |03.22.19       |IP  |   03.23.19     |
+|4. Test Car working                                |03.22.19       |Completed  |   03.22.19     |
+|5. Complete the API documentation                  |03.22.19       |Completed  |   03.23.19     |
+|6. Complete final project                          |03.22.19       |Completed  |   03.23.19     |
 
 
 Installation
@@ -42,13 +42,13 @@ Terminal
 Execution
 ---
 To run the project, type
-    bin/elmacar
+    ./bin/elmacar
 
 
 Architecture
 ===
 
-As new to C++, I designed this ElmaCar project as simple as possible, to demonstrate the knowledge I gained after taking the class. The project was designed as the ElmaCar is the main control the car. It had all the functions included in the helper file that can turn on and off radio, the lights, air conditioning; the engine when it turned on, it can control the brake to stop the car, the wheel to accelebrate or decelebrate the car. 
+As new to C++, I designed this ElmaCar project as simple as possible, to demonstrate the knowledge I gained after taking this class. The project was designed as the ElmaCar is the main of the car, it included all the function in the helper file that can turn on and off radio, the lights, air conditioning; the engine when it turned on, it can control the brake to stop the car, the wheel to accelebrate or decelebrate the car. 
 
 ![Design][design]
 
@@ -115,7 +115,7 @@ The radio can be adjusted with the volume on and off depending on the amount vol
 Results
 ===
 
-When running the bin/elmacar, it will printout the output to tell us when the car started, stopped, accelebrated, decelebrated, braked, and etc... To test the code working, I manually update the main.cc file to get the speed or volume amount, or AC amount. 
+After running ./bin/elmacar, it will printout the output on console window to tell us when the car started, stopped, accelebrated, decelebrated, braked, and etc... To test the code working, I manually update the main.cc file to get the speed, volume amount, AC amount...
 
 Test
 ---
@@ -161,7 +161,7 @@ images/test_output1.png
 
 Enhancement 
 ---
-1. Add UDP messages for the elma that can send message back and forth the information about the Car 
+1. Add UDP messages for elma that can send message back and forth the information about the Car 
 1. Update the car to be able to change gear with diffent amount of gas pedal pressed
 1. Update the road condition and automate the car to follow the road
 1. Test on real car instead of simulation
